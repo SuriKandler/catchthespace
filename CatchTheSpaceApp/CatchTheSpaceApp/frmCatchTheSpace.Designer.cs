@@ -119,7 +119,7 @@
             tblMain.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
             tblMain.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
             tblMain.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
-            tblMain.Size = new Size(1014, 929);
+            tblMain.Size = new Size(1593, 1529);
             tblMain.TabIndex = 0;
             // 
             // tblHeader
@@ -139,7 +139,7 @@
             tblHeader.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tblHeader.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
             tblHeader.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tblHeader.Size = new Size(1008, 179);
+            tblHeader.Size = new Size(1587, 299);
             tblHeader.TabIndex = 0;
             // 
             // lblMessage
@@ -147,17 +147,17 @@
             lblMessage.AutoSize = true;
             lblMessage.BackColor = SystemColors.ButtonHighlight;
             lblMessage.Dock = DockStyle.Fill;
-            lblMessage.Location = new Point(103, 35);
+            lblMessage.Location = new Point(161, 59);
             lblMessage.Name = "lblMessage";
-            lblMessage.Size = new Size(498, 107);
+            lblMessage.Size = new Size(787, 179);
             lblMessage.TabIndex = 0;
             // 
             // btnStart
             // 
             btnStart.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnStart.Location = new Point(707, 38);
+            btnStart.Location = new Point(1112, 62);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(195, 101);
+            btnStart.Size = new Size(311, 173);
             btnStart.TabIndex = 1;
             btnStart.Text = "Start";
             btnStart.UseVisualStyleBackColor = true;
@@ -174,22 +174,22 @@
             tblScore.Controls.Add(lblPlayer1, 1, 1);
             tblScore.Controls.Add(lblPlayer2, 3, 1);
             tblScore.Dock = DockStyle.Fill;
-            tblScore.Location = new Point(3, 791);
+            tblScore.Location = new Point(3, 1301);
             tblScore.Name = "tblScore";
             tblScore.RowCount = 3;
             tblScore.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
             tblScore.RowStyles.Add(new RowStyle(SizeType.Percent, 81.8181839F));
             tblScore.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tblScore.Size = new Size(1008, 135);
+            tblScore.Size = new Size(1587, 225);
             tblScore.TabIndex = 2;
             // 
             // lblScore
             // 
             lblScore.AutoSize = true;
             lblScore.Dock = DockStyle.Fill;
-            lblScore.Location = new Point(3, 12);
+            lblScore.Location = new Point(3, 20);
             lblScore.Name = "lblScore";
-            lblScore.Size = new Size(296, 110);
+            lblScore.Size = new Size(470, 184);
             lblScore.TabIndex = 0;
             lblScore.Text = "Score:";
             lblScore.TextAlign = ContentAlignment.MiddleCenter;
@@ -199,9 +199,9 @@
             lblPlayer1.AutoSize = true;
             lblPlayer1.BackColor = Color.Red;
             lblPlayer1.Dock = DockStyle.Fill;
-            lblPlayer1.Location = new Point(305, 12);
+            lblPlayer1.Location = new Point(479, 20);
             lblPlayer1.Name = "lblPlayer1";
-            lblPlayer1.Size = new Size(296, 110);
+            lblPlayer1.Size = new Size(470, 184);
             lblPlayer1.TabIndex = 1;
             lblPlayer1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -210,9 +210,9 @@
             lblPlayer2.AutoSize = true;
             lblPlayer2.BackColor = Color.FromArgb(0, 192, 0);
             lblPlayer2.Dock = DockStyle.Fill;
-            lblPlayer2.Location = new Point(657, 12);
+            lblPlayer2.Location = new Point(1034, 20);
             lblPlayer2.Name = "lblPlayer2";
-            lblPlayer2.Size = new Size(296, 110);
+            lblPlayer2.Size = new Size(470, 184);
             lblPlayer2.TabIndex = 2;
             lblPlayer2.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -278,7 +278,7 @@
             tblGame.Controls.Add(lblSpace8, 4, 6);
             tblGame.Controls.Add(lblSpace9, 6, 6);
             tblGame.Dock = DockStyle.Fill;
-            tblGame.Location = new Point(3, 188);
+            tblGame.Location = new Point(3, 308);
             tblGame.Name = "tblGame";
             tblGame.RowCount = 9;
             tblGame.RowStyles.Add(new RowStyle(SizeType.Percent, 18.3673477F));
@@ -359,17 +359,17 @@
             tblGame.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tblGame.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tblGame.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tblGame.Size = new Size(1008, 551);
+            tblGame.Size = new Size(1587, 911);
             tblGame.TabIndex = 3;
             // 
             // lblLine4
             // 
             lblLine4.AutoSize = true;
             lblLine4.Dock = DockStyle.Fill;
-            lblLine4.Location = new Point(185, 112);
+            lblLine4.Location = new Point(291, 185);
             lblLine4.Margin = new Padding(0);
             lblLine4.Name = "lblLine4";
-            lblLine4.Size = new Size(20, 101);
+            lblLine4.Size = new Size(32, 167);
             lblLine4.TabIndex = 19;
             // 
             // lbl16
@@ -377,10 +377,10 @@
             lbl16.AutoSize = true;
             lbl16.BackColor = Color.Black;
             lbl16.Dock = DockStyle.Fill;
-            lbl16.Location = new Point(800, 437);
+            lbl16.Location = new Point(1260, 722);
             lbl16.Margin = new Padding(0);
             lbl16.Name = "lbl16";
-            lbl16.Size = new Size(20, 11);
+            lbl16.Size = new Size(32, 18);
             lbl16.TabIndex = 15;
             lbl16.Text = "label1";
             // 
@@ -389,10 +389,10 @@
             lbl15.AutoSize = true;
             lbl15.BackColor = Color.Black;
             lbl15.Dock = DockStyle.Fill;
-            lbl15.Location = new Point(595, 437);
+            lbl15.Location = new Point(937, 722);
             lbl15.Margin = new Padding(0);
             lbl15.Name = "lbl15";
-            lbl15.Size = new Size(20, 11);
+            lbl15.Size = new Size(32, 18);
             lbl15.TabIndex = 14;
             lbl15.Text = "label1";
             // 
@@ -401,10 +401,10 @@
             lbl14.AutoSize = true;
             lbl14.BackColor = Color.Black;
             lbl14.Dock = DockStyle.Fill;
-            lbl14.Location = new Point(390, 437);
+            lbl14.Location = new Point(614, 722);
             lbl14.Margin = new Padding(0);
             lbl14.Name = "lbl14";
-            lbl14.Size = new Size(20, 11);
+            lbl14.Size = new Size(32, 18);
             lbl14.TabIndex = 13;
             lbl14.Text = "label1";
             // 
@@ -413,10 +413,10 @@
             lbl13.AutoSize = true;
             lbl13.BackColor = Color.Black;
             lbl13.Dock = DockStyle.Fill;
-            lbl13.Location = new Point(185, 437);
+            lbl13.Location = new Point(291, 722);
             lbl13.Margin = new Padding(0);
             lbl13.Name = "lbl13";
-            lbl13.Size = new Size(20, 11);
+            lbl13.Size = new Size(32, 18);
             lbl13.TabIndex = 12;
             lbl13.Text = "label1";
             // 
@@ -425,10 +425,10 @@
             lbl12.AutoSize = true;
             lbl12.BackColor = Color.Black;
             lbl12.Dock = DockStyle.Fill;
-            lbl12.Location = new Point(800, 325);
+            lbl12.Location = new Point(1260, 537);
             lbl12.Margin = new Padding(0);
             lbl12.Name = "lbl12";
-            lbl12.Size = new Size(20, 11);
+            lbl12.Size = new Size(32, 18);
             lbl12.TabIndex = 11;
             lbl12.Text = "label1";
             // 
@@ -437,10 +437,10 @@
             lbl11.AutoSize = true;
             lbl11.BackColor = Color.Black;
             lbl11.Dock = DockStyle.Fill;
-            lbl11.Location = new Point(595, 325);
+            lbl11.Location = new Point(937, 537);
             lbl11.Margin = new Padding(0);
             lbl11.Name = "lbl11";
-            lbl11.Size = new Size(20, 11);
+            lbl11.Size = new Size(32, 18);
             lbl11.TabIndex = 10;
             lbl11.Text = "label1";
             // 
@@ -449,10 +449,10 @@
             lbl10.AutoSize = true;
             lbl10.BackColor = Color.Black;
             lbl10.Dock = DockStyle.Fill;
-            lbl10.Location = new Point(390, 325);
+            lbl10.Location = new Point(614, 537);
             lbl10.Margin = new Padding(0);
             lbl10.Name = "lbl10";
-            lbl10.Size = new Size(20, 11);
+            lbl10.Size = new Size(32, 18);
             lbl10.TabIndex = 9;
             lbl10.Text = "label1";
             // 
@@ -461,10 +461,10 @@
             lbl9.AutoSize = true;
             lbl9.BackColor = Color.Black;
             lbl9.Dock = DockStyle.Fill;
-            lbl9.Location = new Point(185, 325);
+            lbl9.Location = new Point(291, 537);
             lbl9.Margin = new Padding(0);
             lbl9.Name = "lbl9";
-            lbl9.Size = new Size(20, 11);
+            lbl9.Size = new Size(32, 18);
             lbl9.TabIndex = 8;
             lbl9.Text = "label1";
             // 
@@ -473,10 +473,10 @@
             lbl8.AutoSize = true;
             lbl8.BackColor = Color.Black;
             lbl8.Dock = DockStyle.Fill;
-            lbl8.Location = new Point(800, 213);
+            lbl8.Location = new Point(1260, 352);
             lbl8.Margin = new Padding(0);
             lbl8.Name = "lbl8";
-            lbl8.Size = new Size(20, 11);
+            lbl8.Size = new Size(32, 18);
             lbl8.TabIndex = 7;
             lbl8.Text = "label1";
             // 
@@ -485,10 +485,10 @@
             lbl7.AutoSize = true;
             lbl7.BackColor = Color.Black;
             lbl7.Dock = DockStyle.Fill;
-            lbl7.Location = new Point(595, 213);
+            lbl7.Location = new Point(937, 352);
             lbl7.Margin = new Padding(0);
             lbl7.Name = "lbl7";
-            lbl7.Size = new Size(20, 11);
+            lbl7.Size = new Size(32, 18);
             lbl7.TabIndex = 6;
             lbl7.Text = "label1";
             // 
@@ -497,10 +497,10 @@
             lbl6.AutoSize = true;
             lbl6.BackColor = Color.Black;
             lbl6.Dock = DockStyle.Fill;
-            lbl6.Location = new Point(390, 213);
+            lbl6.Location = new Point(614, 352);
             lbl6.Margin = new Padding(0);
             lbl6.Name = "lbl6";
-            lbl6.Size = new Size(20, 11);
+            lbl6.Size = new Size(32, 18);
             lbl6.TabIndex = 5;
             lbl6.Text = "label1";
             // 
@@ -509,10 +509,10 @@
             lbl5.AutoSize = true;
             lbl5.BackColor = Color.Black;
             lbl5.Dock = DockStyle.Fill;
-            lbl5.Location = new Point(185, 213);
+            lbl5.Location = new Point(291, 352);
             lbl5.Margin = new Padding(0);
             lbl5.Name = "lbl5";
-            lbl5.Size = new Size(20, 11);
+            lbl5.Size = new Size(32, 18);
             lbl5.TabIndex = 4;
             lbl5.Text = "label1";
             // 
@@ -521,10 +521,10 @@
             lbl4.AutoSize = true;
             lbl4.BackColor = Color.Black;
             lbl4.Dock = DockStyle.Fill;
-            lbl4.Location = new Point(800, 101);
+            lbl4.Location = new Point(1260, 167);
             lbl4.Margin = new Padding(0);
             lbl4.Name = "lbl4";
-            lbl4.Size = new Size(20, 11);
+            lbl4.Size = new Size(32, 18);
             lbl4.TabIndex = 3;
             lbl4.Text = "label1";
             // 
@@ -533,10 +533,10 @@
             lbl2.AutoSize = true;
             lbl2.BackColor = Color.Black;
             lbl2.Dock = DockStyle.Fill;
-            lbl2.Location = new Point(390, 101);
+            lbl2.Location = new Point(614, 167);
             lbl2.Margin = new Padding(0);
             lbl2.Name = "lbl2";
-            lbl2.Size = new Size(20, 11);
+            lbl2.Size = new Size(32, 18);
             lbl2.TabIndex = 1;
             lbl2.Text = "label1";
             // 
@@ -545,10 +545,10 @@
             lbl1.AutoSize = true;
             lbl1.BackColor = Color.Black;
             lbl1.Dock = DockStyle.Fill;
-            lbl1.Location = new Point(185, 101);
+            lbl1.Location = new Point(291, 167);
             lbl1.Margin = new Padding(0);
             lbl1.Name = "lbl1";
-            lbl1.Size = new Size(20, 11);
+            lbl1.Size = new Size(32, 18);
             lbl1.TabIndex = 0;
             lbl1.Text = "label1";
             // 
@@ -557,10 +557,10 @@
             lbl3.AutoSize = true;
             lbl3.BackColor = Color.Black;
             lbl3.Dock = DockStyle.Fill;
-            lbl3.Location = new Point(595, 101);
+            lbl3.Location = new Point(937, 167);
             lbl3.Margin = new Padding(0);
             lbl3.Name = "lbl3";
-            lbl3.Size = new Size(20, 11);
+            lbl3.Size = new Size(32, 18);
             lbl3.TabIndex = 2;
             lbl3.Text = "label1";
             // 
@@ -568,232 +568,230 @@
             // 
             lblLine1.AutoSize = true;
             lblLine1.Dock = DockStyle.Fill;
-            lblLine1.Location = new Point(205, 101);
+            lblLine1.Location = new Point(323, 167);
             lblLine1.Margin = new Padding(0);
             lblLine1.Name = "lblLine1";
-            lblLine1.Size = new Size(185, 11);
+            lblLine1.Size = new Size(291, 18);
             lblLine1.TabIndex = 16;
             // 
             // lblLine2
             // 
             lblLine2.AutoSize = true;
             lblLine2.Dock = DockStyle.Fill;
-            lblLine2.Location = new Point(410, 101);
+            lblLine2.Location = new Point(646, 167);
             lblLine2.Margin = new Padding(0);
             lblLine2.Name = "lblLine2";
-            lblLine2.Size = new Size(185, 11);
+            lblLine2.Size = new Size(291, 18);
             lblLine2.TabIndex = 17;
             // 
             // lblLine3
             // 
             lblLine3.AutoSize = true;
             lblLine3.Dock = DockStyle.Fill;
-            lblLine3.Location = new Point(615, 101);
+            lblLine3.Location = new Point(969, 167);
             lblLine3.Margin = new Padding(0);
             lblLine3.Name = "lblLine3";
-            lblLine3.Size = new Size(185, 11);
+            lblLine3.Size = new Size(291, 18);
             lblLine3.TabIndex = 18;
             // 
             // lblLine5
             // 
             lblLine5.AutoSize = true;
             lblLine5.Dock = DockStyle.Fill;
-            lblLine5.Location = new Point(390, 112);
+            lblLine5.Location = new Point(614, 185);
             lblLine5.Margin = new Padding(0);
             lblLine5.Name = "lblLine5";
-            lblLine5.Size = new Size(20, 101);
+            lblLine5.Size = new Size(32, 167);
             lblLine5.TabIndex = 20;
             // 
             // lblLine6
             // 
             lblLine6.AutoSize = true;
             lblLine6.Dock = DockStyle.Fill;
-            lblLine6.Location = new Point(595, 112);
+            lblLine6.Location = new Point(937, 185);
             lblLine6.Margin = new Padding(0);
             lblLine6.Name = "lblLine6";
-            lblLine6.Size = new Size(20, 101);
+            lblLine6.Size = new Size(32, 167);
             lblLine6.TabIndex = 21;
             // 
             // lblLine7
             // 
             lblLine7.AutoSize = true;
             lblLine7.Dock = DockStyle.Fill;
-            lblLine7.Location = new Point(800, 112);
+            lblLine7.Location = new Point(1260, 185);
             lblLine7.Margin = new Padding(0);
             lblLine7.Name = "lblLine7";
-            lblLine7.Size = new Size(20, 101);
+            lblLine7.Size = new Size(32, 167);
             lblLine7.TabIndex = 22;
             // 
             // lblLine8
             // 
             lblLine8.AutoSize = true;
             lblLine8.Dock = DockStyle.Fill;
-            lblLine8.Location = new Point(205, 213);
+            lblLine8.Location = new Point(323, 352);
             lblLine8.Margin = new Padding(0);
             lblLine8.Name = "lblLine8";
-            lblLine8.Size = new Size(185, 11);
+            lblLine8.Size = new Size(291, 18);
             lblLine8.TabIndex = 23;
-            lblLine8.Text = "label1";
             // 
             // lblLine9
             // 
             lblLine9.AutoSize = true;
             lblLine9.Dock = DockStyle.Fill;
-            lblLine9.Location = new Point(410, 213);
+            lblLine9.Location = new Point(646, 352);
             lblLine9.Margin = new Padding(0);
             lblLine9.Name = "lblLine9";
-            lblLine9.Size = new Size(185, 11);
+            lblLine9.Size = new Size(291, 18);
             lblLine9.TabIndex = 24;
-            lblLine9.Text = "label1";
             // 
             // lblLine10
             // 
             lblLine10.AutoSize = true;
             lblLine10.Dock = DockStyle.Fill;
-            lblLine10.Location = new Point(615, 213);
+            lblLine10.Location = new Point(969, 352);
             lblLine10.Margin = new Padding(0);
             lblLine10.Name = "lblLine10";
-            lblLine10.Size = new Size(185, 11);
+            lblLine10.Size = new Size(291, 18);
             lblLine10.TabIndex = 25;
             // 
             // lblLine11
             // 
             lblLine11.AutoSize = true;
             lblLine11.Dock = DockStyle.Fill;
-            lblLine11.Location = new Point(185, 224);
+            lblLine11.Location = new Point(291, 370);
             lblLine11.Margin = new Padding(0);
             lblLine11.Name = "lblLine11";
-            lblLine11.Size = new Size(20, 101);
+            lblLine11.Size = new Size(32, 167);
             lblLine11.TabIndex = 26;
             // 
             // lblLine12
             // 
             lblLine12.AutoSize = true;
             lblLine12.Dock = DockStyle.Fill;
-            lblLine12.Location = new Point(390, 224);
+            lblLine12.Location = new Point(614, 370);
             lblLine12.Margin = new Padding(0);
             lblLine12.Name = "lblLine12";
-            lblLine12.Size = new Size(20, 101);
+            lblLine12.Size = new Size(32, 167);
             lblLine12.TabIndex = 27;
             // 
             // lblLine13
             // 
             lblLine13.AutoSize = true;
             lblLine13.Dock = DockStyle.Fill;
-            lblLine13.Location = new Point(595, 224);
+            lblLine13.Location = new Point(937, 370);
             lblLine13.Margin = new Padding(0);
             lblLine13.Name = "lblLine13";
-            lblLine13.Size = new Size(20, 101);
+            lblLine13.Size = new Size(32, 167);
             lblLine13.TabIndex = 28;
             // 
             // lblLine14
             // 
             lblLine14.AutoSize = true;
             lblLine14.Dock = DockStyle.Fill;
-            lblLine14.Location = new Point(800, 224);
+            lblLine14.Location = new Point(1260, 370);
             lblLine14.Margin = new Padding(0);
             lblLine14.Name = "lblLine14";
-            lblLine14.Size = new Size(20, 101);
+            lblLine14.Size = new Size(32, 167);
             lblLine14.TabIndex = 29;
             // 
             // lblLine15
             // 
             lblLine15.AutoSize = true;
             lblLine15.Dock = DockStyle.Fill;
-            lblLine15.Location = new Point(205, 325);
+            lblLine15.Location = new Point(323, 537);
             lblLine15.Margin = new Padding(0);
             lblLine15.Name = "lblLine15";
-            lblLine15.Size = new Size(185, 11);
+            lblLine15.Size = new Size(291, 18);
             lblLine15.TabIndex = 30;
             // 
             // lblLine16
             // 
             lblLine16.AutoSize = true;
             lblLine16.Dock = DockStyle.Fill;
-            lblLine16.Location = new Point(410, 325);
+            lblLine16.Location = new Point(646, 537);
             lblLine16.Margin = new Padding(0);
             lblLine16.Name = "lblLine16";
-            lblLine16.Size = new Size(185, 11);
+            lblLine16.Size = new Size(291, 18);
             lblLine16.TabIndex = 31;
             // 
             // lblLine17
             // 
             lblLine17.AutoSize = true;
             lblLine17.Dock = DockStyle.Fill;
-            lblLine17.Location = new Point(615, 325);
+            lblLine17.Location = new Point(969, 537);
             lblLine17.Margin = new Padding(0);
             lblLine17.Name = "lblLine17";
-            lblLine17.Size = new Size(185, 11);
+            lblLine17.Size = new Size(291, 18);
             lblLine17.TabIndex = 32;
             // 
             // lblLine18
             // 
             lblLine18.AutoSize = true;
             lblLine18.Dock = DockStyle.Fill;
-            lblLine18.Location = new Point(185, 336);
+            lblLine18.Location = new Point(291, 555);
             lblLine18.Margin = new Padding(0);
             lblLine18.Name = "lblLine18";
-            lblLine18.Size = new Size(20, 101);
+            lblLine18.Size = new Size(32, 167);
             lblLine18.TabIndex = 33;
             // 
             // lblLine19
             // 
             lblLine19.AutoSize = true;
             lblLine19.Dock = DockStyle.Fill;
-            lblLine19.Location = new Point(390, 336);
+            lblLine19.Location = new Point(614, 555);
             lblLine19.Margin = new Padding(0);
             lblLine19.Name = "lblLine19";
-            lblLine19.Size = new Size(20, 101);
+            lblLine19.Size = new Size(32, 167);
             lblLine19.TabIndex = 34;
             // 
             // lblLine20
             // 
             lblLine20.AutoSize = true;
             lblLine20.Dock = DockStyle.Fill;
-            lblLine20.Location = new Point(595, 336);
+            lblLine20.Location = new Point(937, 555);
             lblLine20.Margin = new Padding(0);
             lblLine20.Name = "lblLine20";
-            lblLine20.Size = new Size(20, 101);
+            lblLine20.Size = new Size(32, 167);
             lblLine20.TabIndex = 35;
             // 
             // lblLine21
             // 
             lblLine21.AutoSize = true;
             lblLine21.Dock = DockStyle.Fill;
-            lblLine21.Location = new Point(800, 336);
+            lblLine21.Location = new Point(1260, 555);
             lblLine21.Margin = new Padding(0);
             lblLine21.Name = "lblLine21";
-            lblLine21.Size = new Size(20, 101);
+            lblLine21.Size = new Size(32, 167);
             lblLine21.TabIndex = 36;
             // 
             // lblLine22
             // 
             lblLine22.AutoSize = true;
             lblLine22.Dock = DockStyle.Fill;
-            lblLine22.Location = new Point(205, 437);
+            lblLine22.Location = new Point(323, 722);
             lblLine22.Margin = new Padding(0);
             lblLine22.Name = "lblLine22";
-            lblLine22.Size = new Size(185, 11);
+            lblLine22.Size = new Size(291, 18);
             lblLine22.TabIndex = 37;
             // 
             // lblLine23
             // 
             lblLine23.AutoSize = true;
             lblLine23.Dock = DockStyle.Fill;
-            lblLine23.Location = new Point(410, 437);
+            lblLine23.Location = new Point(646, 722);
             lblLine23.Margin = new Padding(0);
             lblLine23.Name = "lblLine23";
-            lblLine23.Size = new Size(185, 11);
+            lblLine23.Size = new Size(291, 18);
             lblLine23.TabIndex = 38;
             // 
             // lblLine24
             // 
             lblLine24.AutoSize = true;
             lblLine24.Dock = DockStyle.Fill;
-            lblLine24.Location = new Point(615, 437);
+            lblLine24.Location = new Point(969, 722);
             lblLine24.Margin = new Padding(0);
             lblLine24.Name = "lblLine24";
-            lblLine24.Size = new Size(185, 11);
+            lblLine24.Size = new Size(291, 18);
             lblLine24.TabIndex = 39;
             // 
             // lblSpace1
@@ -801,10 +799,10 @@
             lblSpace1.AutoSize = true;
             lblSpace1.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace1.Dock = DockStyle.Fill;
-            lblSpace1.Location = new Point(205, 112);
+            lblSpace1.Location = new Point(323, 185);
             lblSpace1.Margin = new Padding(0);
             lblSpace1.Name = "lblSpace1";
-            lblSpace1.Size = new Size(185, 101);
+            lblSpace1.Size = new Size(291, 167);
             lblSpace1.TabIndex = 40;
             // 
             // lblSpace2
@@ -812,10 +810,10 @@
             lblSpace2.AutoSize = true;
             lblSpace2.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace2.Dock = DockStyle.Fill;
-            lblSpace2.Location = new Point(410, 112);
+            lblSpace2.Location = new Point(646, 185);
             lblSpace2.Margin = new Padding(0);
             lblSpace2.Name = "lblSpace2";
-            lblSpace2.Size = new Size(185, 101);
+            lblSpace2.Size = new Size(291, 167);
             lblSpace2.TabIndex = 41;
             // 
             // lblSpace3
@@ -823,10 +821,10 @@
             lblSpace3.AutoSize = true;
             lblSpace3.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace3.Dock = DockStyle.Fill;
-            lblSpace3.Location = new Point(615, 112);
+            lblSpace3.Location = new Point(969, 185);
             lblSpace3.Margin = new Padding(0);
             lblSpace3.Name = "lblSpace3";
-            lblSpace3.Size = new Size(185, 101);
+            lblSpace3.Size = new Size(291, 167);
             lblSpace3.TabIndex = 42;
             // 
             // lblSpace4
@@ -834,10 +832,10 @@
             lblSpace4.AutoSize = true;
             lblSpace4.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace4.Dock = DockStyle.Fill;
-            lblSpace4.Location = new Point(205, 224);
+            lblSpace4.Location = new Point(323, 370);
             lblSpace4.Margin = new Padding(0);
             lblSpace4.Name = "lblSpace4";
-            lblSpace4.Size = new Size(185, 101);
+            lblSpace4.Size = new Size(291, 167);
             lblSpace4.TabIndex = 43;
             // 
             // lblSpace5
@@ -845,10 +843,10 @@
             lblSpace5.AutoSize = true;
             lblSpace5.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace5.Dock = DockStyle.Fill;
-            lblSpace5.Location = new Point(410, 224);
+            lblSpace5.Location = new Point(646, 370);
             lblSpace5.Margin = new Padding(0);
             lblSpace5.Name = "lblSpace5";
-            lblSpace5.Size = new Size(185, 101);
+            lblSpace5.Size = new Size(291, 167);
             lblSpace5.TabIndex = 44;
             // 
             // lblSpace6
@@ -856,10 +854,10 @@
             lblSpace6.AutoSize = true;
             lblSpace6.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace6.Dock = DockStyle.Fill;
-            lblSpace6.Location = new Point(615, 224);
+            lblSpace6.Location = new Point(969, 370);
             lblSpace6.Margin = new Padding(0);
             lblSpace6.Name = "lblSpace6";
-            lblSpace6.Size = new Size(185, 101);
+            lblSpace6.Size = new Size(291, 167);
             lblSpace6.TabIndex = 45;
             // 
             // lblSpace7
@@ -867,10 +865,10 @@
             lblSpace7.AutoSize = true;
             lblSpace7.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace7.Dock = DockStyle.Fill;
-            lblSpace7.Location = new Point(205, 336);
+            lblSpace7.Location = new Point(323, 555);
             lblSpace7.Margin = new Padding(0);
             lblSpace7.Name = "lblSpace7";
-            lblSpace7.Size = new Size(185, 101);
+            lblSpace7.Size = new Size(291, 167);
             lblSpace7.TabIndex = 46;
             // 
             // lblSpace8
@@ -878,10 +876,10 @@
             lblSpace8.AutoSize = true;
             lblSpace8.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace8.Dock = DockStyle.Fill;
-            lblSpace8.Location = new Point(410, 336);
+            lblSpace8.Location = new Point(646, 555);
             lblSpace8.Margin = new Padding(0);
             lblSpace8.Name = "lblSpace8";
-            lblSpace8.Size = new Size(185, 101);
+            lblSpace8.Size = new Size(291, 167);
             lblSpace8.TabIndex = 47;
             // 
             // lblSpace9
@@ -889,10 +887,10 @@
             lblSpace9.AutoSize = true;
             lblSpace9.BackColor = Color.FromArgb(224, 224, 224);
             lblSpace9.Dock = DockStyle.Fill;
-            lblSpace9.Location = new Point(615, 336);
+            lblSpace9.Location = new Point(969, 555);
             lblSpace9.Margin = new Padding(0);
             lblSpace9.Name = "lblSpace9";
-            lblSpace9.Size = new Size(185, 101);
+            lblSpace9.Size = new Size(291, 167);
             lblSpace9.TabIndex = 48;
             // 
             // tlpProgressBar
@@ -917,11 +915,11 @@
             tlpProgressBar.Controls.Add(lblProgress8, 7, 0);
             tlpProgressBar.Controls.Add(lblProgress9, 8, 0);
             tlpProgressBar.Dock = DockStyle.Fill;
-            tlpProgressBar.Location = new Point(3, 745);
+            tlpProgressBar.Location = new Point(3, 1225);
             tlpProgressBar.Name = "tlpProgressBar";
             tlpProgressBar.RowCount = 1;
             tlpProgressBar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpProgressBar.Size = new Size(1008, 40);
+            tlpProgressBar.Size = new Size(1587, 70);
             tlpProgressBar.TabIndex = 4;
             // 
             // lblProgress1
@@ -931,94 +929,94 @@
             lblProgress1.Location = new Point(0, 0);
             lblProgress1.Margin = new Padding(0);
             lblProgress1.Name = "lblProgress1";
-            lblProgress1.Size = new Size(112, 40);
+            lblProgress1.Size = new Size(176, 70);
             lblProgress1.TabIndex = 0;
             // 
             // lblProgress2
             // 
             lblProgress2.AutoSize = true;
             lblProgress2.Dock = DockStyle.Fill;
-            lblProgress2.Location = new Point(112, 0);
+            lblProgress2.Location = new Point(176, 0);
             lblProgress2.Margin = new Padding(0);
             lblProgress2.Name = "lblProgress2";
-            lblProgress2.Size = new Size(112, 40);
+            lblProgress2.Size = new Size(176, 70);
             lblProgress2.TabIndex = 1;
             // 
             // lblProgress3
             // 
             lblProgress3.AutoSize = true;
             lblProgress3.Dock = DockStyle.Fill;
-            lblProgress3.Location = new Point(224, 0);
+            lblProgress3.Location = new Point(352, 0);
             lblProgress3.Margin = new Padding(0);
             lblProgress3.Name = "lblProgress3";
-            lblProgress3.Size = new Size(112, 40);
+            lblProgress3.Size = new Size(176, 70);
             lblProgress3.TabIndex = 2;
             // 
             // lblProgress4
             // 
             lblProgress4.AutoSize = true;
             lblProgress4.Dock = DockStyle.Fill;
-            lblProgress4.Location = new Point(336, 0);
+            lblProgress4.Location = new Point(528, 0);
             lblProgress4.Margin = new Padding(0);
             lblProgress4.Name = "lblProgress4";
-            lblProgress4.Size = new Size(112, 40);
+            lblProgress4.Size = new Size(176, 70);
             lblProgress4.TabIndex = 3;
             // 
             // lblProgress5
             // 
             lblProgress5.AutoSize = true;
             lblProgress5.Dock = DockStyle.Fill;
-            lblProgress5.Location = new Point(448, 0);
+            lblProgress5.Location = new Point(704, 0);
             lblProgress5.Margin = new Padding(0);
             lblProgress5.Name = "lblProgress5";
-            lblProgress5.Size = new Size(112, 40);
+            lblProgress5.Size = new Size(176, 70);
             lblProgress5.TabIndex = 4;
             // 
             // lblProgress6
             // 
             lblProgress6.AutoSize = true;
             lblProgress6.Dock = DockStyle.Fill;
-            lblProgress6.Location = new Point(560, 0);
+            lblProgress6.Location = new Point(880, 0);
             lblProgress6.Margin = new Padding(0);
             lblProgress6.Name = "lblProgress6";
-            lblProgress6.Size = new Size(112, 40);
+            lblProgress6.Size = new Size(176, 70);
             lblProgress6.TabIndex = 5;
             // 
             // lblProgress7
             // 
             lblProgress7.AutoSize = true;
             lblProgress7.Dock = DockStyle.Fill;
-            lblProgress7.Location = new Point(672, 0);
+            lblProgress7.Location = new Point(1056, 0);
             lblProgress7.Margin = new Padding(0);
             lblProgress7.Name = "lblProgress7";
-            lblProgress7.Size = new Size(112, 40);
+            lblProgress7.Size = new Size(176, 70);
             lblProgress7.TabIndex = 6;
             // 
             // lblProgress8
             // 
             lblProgress8.AutoSize = true;
             lblProgress8.Dock = DockStyle.Fill;
-            lblProgress8.Location = new Point(784, 0);
+            lblProgress8.Location = new Point(1232, 0);
             lblProgress8.Margin = new Padding(0);
             lblProgress8.Name = "lblProgress8";
-            lblProgress8.Size = new Size(112, 40);
+            lblProgress8.Size = new Size(176, 70);
             lblProgress8.TabIndex = 7;
             // 
             // lblProgress9
             // 
             lblProgress9.AutoSize = true;
             lblProgress9.Dock = DockStyle.Fill;
-            lblProgress9.Location = new Point(896, 0);
+            lblProgress9.Location = new Point(1408, 0);
             lblProgress9.Margin = new Padding(0);
             lblProgress9.Name = "lblProgress9";
-            lblProgress9.Size = new Size(112, 40);
+            lblProgress9.Size = new Size(179, 70);
             lblProgress9.TabIndex = 8;
             // 
             // frmCatchTheSpace
             // 
             AutoScaleDimensions = new SizeF(22F, 54F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1014, 929);
+            ClientSize = new Size(1593, 1529);
             Controls.Add(tblMain);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);

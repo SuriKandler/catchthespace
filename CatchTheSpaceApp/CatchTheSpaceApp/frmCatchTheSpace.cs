@@ -53,13 +53,6 @@
             DisplayGameStatus();
         }
 
-        private void LineClick_Click(object? sender, EventArgs e)
-        {
-            if (sender is Label label && label.BackColor == Color.White && label.Enabled)
-            {
-                DoTurn(label);
-            }
-        }
         private void DoTurn(Label label)
         {
             if (gameactive)
@@ -157,7 +150,7 @@
 
         private void DisplayGameStatus()
         {
-            string msg = gameactive ? $"Current Turn: {currentturn} player" : "Click Start to begin Game";
+            string msg = gameactive ? $"Current Turn: {currentturn} player, it's your turn click any line" : "Click Start to begin Game";
             lblMessage.Text = msg;
         }
 
@@ -200,6 +193,13 @@
                 lblMessage.Text = "Green Player Wins!"; // Display the winner
             }
            
+        }
+        private void LineClick_Click(object? sender, EventArgs e)
+        {
+            if (sender is Label label && label.BackColor == Color.White && label.Enabled)
+            {
+                DoTurn(label);
+            }
         }
         private void BtnStart_Click(object? sender, EventArgs e)
         {
