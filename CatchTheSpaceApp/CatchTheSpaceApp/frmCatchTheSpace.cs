@@ -156,7 +156,7 @@
 
         private void CheckIfGameIsOver()
         {
-            int totalBoxes = 9; // Number of boxes (9 boxes in your case)
+            int totalBoxes = 9; // Number of boxes 
             int filledBoxes = 0;
 
             // Loop through all the space labels and count how many are filled (not white)
