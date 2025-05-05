@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchTheSpaceApp", "CatchTheSpaceApp\CatchTheSpaceApp.csproj", "{1B409AC4-4448-4418-BF82-B182AC2D83ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchTheSpaceMaui", "CatchTheSpaceMaui\CatchTheSpaceMaui.csproj", "{91377203-A2B1-49C7-A31A-6479734EEFBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,17 @@ Global
 		{1B409AC4-4448-4418-BF82-B182AC2D83ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B409AC4-4448-4418-BF82-B182AC2D83ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B409AC4-4448-4418-BF82-B182AC2D83ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91377203-A2B1-49C7-A31A-6479734EEFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91377203-A2B1-49C7-A31A-6479734EEFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91377203-A2B1-49C7-A31A-6479734EEFBE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{91377203-A2B1-49C7-A31A-6479734EEFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91377203-A2B1-49C7-A31A-6479734EEFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91377203-A2B1-49C7-A31A-6479734EEFBE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99178F3D-2661-48C7-87BB-66B2C02C68C1}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CatchTheSpaceMaui.Game"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*,2*,*,10*,*,2*,2*,*">
+
+        <Grid Grid.Row ="1" ColumnDefinitions="*,6*,*,2*,*">
+
+            <Border
+            Grid.Column="1" 
+            StrokeShape="RoundRectangle 50,50,50,50"
+            Background="White"
+            HorizontalOptions="Center">
+                <Label 
+            x:Name="MessageLbl"
+            HeightRequest="20"
+            WidthRequest="350"
+            TextColor="White"
+            FontSize="26"
+            FontAttributes="Bold" 
+        />
+            </Border>
+
+            <Button x:Name="StartBtn" Grid.Column="3" Clicked="StartBtn_Clicked"
+            FontAttributes="Italic"
+            Text="Start"
+            FontSize="Small"
+            HeightRequest="20"
+            WidthRequest="180"
+            TextColor="White"
+            Background="#F7C671"
+            CornerRadius="10"/>
+        </Grid>
+
+
+        <Grid Grid.Row="3" RowDefinitions="*,2*,*,2*,*,2*,*" ColumnDefinitions="*,Auto,*,Auto,*,Auto,*,Auto,*">
+
+            <Image Source="c1c.png" Grid.Row="0" Grid.Column="1" />
+            <Image Source="c1c.png" Grid.Row="0" Grid.Column="3"/>
+            <Image Source="c1c.png" Grid.Row="0" Grid.Column="5"/>
+            <Image Source="c1c.png" Grid.Row="0" Grid.Column="7"/>
+            <Image Source="c1c.png" Grid.Row="2" Grid.Column="1"/>
+            <Image Source="c1c.png" Grid.Row="2" Grid.Column="3"/>
+            <Image Source="c1c.png" Grid.Row="2" Grid.Column="5"/>
+            <Image Source="c1c.png" Grid.Row="2" Grid.Column="7"/>
+            <Image Source="c1c.png" Grid.Row="4" Grid.Column="1"/>
+            <Image Source="c1c.png" Grid.Row="4" Grid.Column="3"/>
+            <Image Source="c1c.png" Grid.Row="4" Grid.Column="5"/>
+            <Image Source="c1c.png" Grid.Row="4" Grid.Column="7"/>
+            <Image Source="c1c.png" Grid.Row="6" Grid.Column="1"/>
+            <Image Source="c1c.png" Grid.Row="6" Grid.Column="3"/>
+            <Image Source="c1c.png" Grid.Row="6" Grid.Column="5"/>
+            <Image Source="c1c.png" Grid.Row="6" Grid.Column="7"/>
+            <Button x:Name="lblLine1" Grid.Column="2" Grid.Row="0" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine8" Grid.Column="2" Grid.Row="2" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine15" Grid.Column="2" Grid.Row="4" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine22" Grid.Column="2" Grid.Row="6" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine2" Grid.Column="4" Grid.Row="0" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine9" Grid.Column="4" Grid.Row="2" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine16" Grid.Column="4" Grid.Row="4" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine23" Grid.Column="4" Grid.Row="6" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine3" Grid.Column="6" Grid.Row="0" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine10" Grid.Column="6" Grid.Row="2" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine17" Grid.Column="6" Grid.Row="4" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+            <Button x:Name="lblLine24" Grid.Column="6" Grid.Row="6" Style="{StaticResource Key=game-button}" MaximumHeightRequest="23" HorizontalOptions="Fill" />
+
+            <Button x:Name="lblLine4" Grid.Column="1" Grid.Row="1" Style="{StaticResource Key=game-button}" MaximumWidthRequest="30" VerticalOptions="Fill" />
+            <Button x:Name="lblLine11" Grid.Column="1" Grid.Row="3" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine18" Grid.Column="1" Grid.Row="5" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine5" Grid.Column="3" Grid.Row="1" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine12" Grid.Column="3" Grid.Row="3" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine19" Grid.Column="3" Grid.Row="5" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine6" Grid.Column="5" Grid.Row="1" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine13" Grid.Column="5" Grid.Row="3" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine20" Grid.Column="5" Grid.Row="5" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine7" Grid.Column="7" Grid.Row="1" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine14" Grid.Column="7" Grid.Row="3" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+            <Button x:Name="lblLine21" Grid.Column="7" Grid.Row="5" Style="{StaticResource Key=game-button}" MaximumWidthRequest="23" VerticalOptions="Fill" />
+
+            <Label x:Name="lblSpace1" Grid.Column="2" Grid.Row="1" Padding="0"/>
+            <Label x:Name="lblSpace2" Grid.Column="4" Grid.Row="1" Padding="0"/>
+            <Label x:Name="lblSpace3" Grid.Column="6" Grid.Row="1" Padding="0"/>
+            <Label x:Name="lblSpace4" Grid.Column="2" Grid.Row="3" Padding="0"/>
+            <Label x:Name="lblSpace5" Grid.Column="4" Grid.Row="3" Padding="0"/>
+            <Label x:Name="lblSpace6" Grid.Column="6" Grid.Row="3" Padding="0"/>
+            <Label x:Name="lblSpace7" Grid.Column="2" Grid.Row="5" Padding="0"/>
+            <Label x:Name="lblSpace8" Grid.Column="4" Grid.Row="5" Padding="0"/>
+            <Label x:Name="lblSpace9" Grid.Column="6" Grid.Row="5" Padding="0"/>
+
+
+        </Grid>
+
+        <Image Source="plate.png"
+           Grid.Column="1"
+           HorizontalOptions="Start"
+           VerticalOptions="Start"
+           Scale="15"
+           Aspect="AspectFit"
+           InputTransparent="True"
+           ZIndex="-1" />
+        
+        <Image Source="sweets.png"
+           Grid.Row="5"
+           HorizontalOptions="Start"
+           VerticalOptions="Start"
+           Scale="4"
+           Aspect="AspectFit"
+           InputTransparent="True"
+           ZIndex="-1" />
+
+        <Image Source="sweets.png"
+           Grid.Row="6"
+           HorizontalOptions="End"
+           VerticalOptions="End"
+           Scale="3"
+           Aspect="AspectFit"
+           InputTransparent="True"
+           ZIndex="-1" />
+
+        <ProgressBar x:Name="ProgressBar" Grid.Row="5"/>
+
+        <Grid Grid.Row ="6" ColumnDefinitions="4*,2*,2*,2*,2*,4*">
+            <Image Grid.Column="1" Source="s3s.png" Rotation="10" HorizontalOptions="End"/>
+            <Border Grid.Column="2" 
+                Stroke="#878BFA"
+                StrokeShape="RoundRectangle 75,75,75,75"
+                Background="#FA7D7D"
+                HorizontalOptions="Center">
+                <Label x:Name="Player1Score"
+                HeightRequest="50"
+                WidthRequest="100"
+                TextColor="White"
+                FontSize="26"
+                FontAttributes="Bold" />
+            </Border>
+
+            <Image Grid.Column="3" Source="l1l.png" HorizontalOptions="End"/>
+            <Border Grid.Column="4" 
+                Stroke="#878BFA"
+                StrokeShape="RoundRectangle 75,75,75,75"
+                Background="#F7C671"
+                HorizontalOptions="Center">
+                <Label x:Name="Player2Score"
+                HeightRequest="50"
+                WidthRequest="100"
+                TextColor="White"
+                FontSize="26"
+                FontAttributes="Bold"/>
+            </Border>
+
+        </Grid>
+    </Grid>
+
+</ContentPage>
