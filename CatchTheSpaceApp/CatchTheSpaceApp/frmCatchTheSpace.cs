@@ -1,4 +1,6 @@
 ﻿using CatchTheSpaceSystem;
+using Microsoft.Maui.Graphics;
+using System.Numerics;
 namespace CatchTheSpaceApp
 {
     public partial class frmCatchTheSpace : Form
@@ -30,10 +32,39 @@ namespace CatchTheSpaceApp
             btnStart.Click += BtnStart_Click;
 
             lblMessage.DataBindings.Add("Text", game, "DisplayGameStatus");
+
+            lblPlayer1.DataBindings.Add("Text", game, "Player1Score");
+            lblPlayer2.DataBindings.Add("Text", game, "Player2Score");
+
+            game.ProgressUpdated += Game_ProgressUpdated;
         }
+
+        private void Game_ProgressUpdated(int scorevalue, Player player)
+        {
+            string labelName = $"lblProgress{scorevalue}";
+            var foundControls = this.Controls.Find(labelName, true); 
+
+            if (foundControls.Length > 0 && foundControls[0] is Label label)
+            {
+                if (player == Player.None)
+                {
+                    label.BackColor = game.ProgressBarNotStartedColor;
+                }
+                else
+                {
+                    label.BackColor = player == Player.Red ? Player.Red.GetColor() : Player.Orange.GetColor();
+                }
+                label.Visible = true;
+                label.BringToFront();
+            }
+
+
+        }
+
         private void StartGame()
         {
             game.StartGame();
+
         }
 
         private void DoTurn(Label label)
@@ -41,35 +72,7 @@ namespace CatchTheSpaceApp
             int num = lstlines.IndexOf(label);
             game.DoTurn(num);
         }
-        //private void UpdateScore(Color winnerColor)
-        //{
-        //    if (winnerColor == Color.Red)
-        //    {
-        //        redPlayerScore++;
-        //        lblPlayer1.Text = redPlayerScore.ToString();
-        //    }
-        //    else
-        //    {
-        //        greenPlayerScore++;
-        //        lblPlayer2.Text = greenPlayerScore.ToString();
-        //    }
-
-        //    UpdateProgressLabel(winnerColor == Color.Red ? redPlayerScore : greenPlayerScore, winnerColor);
-        //    currentturn = (currentturn == TurnEnum.Red) ? TurnEnum.Green : TurnEnum.Red;
-        //}
-
-        //private void UpdateProgressLabel(int score, Color winnerColor)
-        //{
-        //    string progressLabelName = winnerColor == Color.Red ? $"lblProgress{score}" : $"lblProgress{10 - score}";
-
-        //    Label? progressLabel = this.Controls.Find(progressLabelName, true).FirstOrDefault() as Label;
-
-        //    if (progressLabel != null)
-        //    {
-        //        progressLabel.BackColor = winnerColor;
-        //    }
-        //}
-
+    
         private void LineClick_Click(object? sender, EventArgs e)
         {
             if (sender is Label label && label.BackColor == game.LineNotStartedColor && label.Enabled)

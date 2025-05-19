@@ -9,12 +9,10 @@ using System.Threading.Tasks;
 
 namespace CatchTheSpaceSystem
 {
-    public class Space : INotifyPropertyChanged
+    public class Progress : INotifyPropertyChanged
     {
         System.Drawing.Color _backColor = Color.Transparent;
         public event PropertyChangedEventHandler? PropertyChanged;
-        //decide if keep this below
-        //public Player? ClaimedBy { get; set; } = null;
         public System.Drawing.Color BackColor
         {
             get => _backColor;
@@ -47,6 +45,5 @@ namespace CatchTheSpaceSystem
 
             return new Microsoft.Maui.Graphics.Color(red, green, blue, alpha);
         }
-
     }
 }

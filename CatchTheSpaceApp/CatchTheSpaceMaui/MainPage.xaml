@@ -6,6 +6,14 @@
              Shell.NavBarIsVisible="False">
 
     <Grid RowDefinitions="*,2*,*,10*,*,2*,2*,*">
+        <Grid Grid.Row="0" ColumnDefinitions="*,*,*,*" RowDefinitions="*,Auto,*">
+            <HorizontalStackLayout Padding="5"  Grid.Column="1" Grid.Row="1" HorizontalOptions="Center">
+                <RadioButton x:Name="Game1Rb" Content="Game 1" CheckedChanged="Game_CheckedChanged" IsChecked="True"/>
+                <RadioButton x:Name="Game2Rb" Content="Game 2" CheckedChanged="Game_CheckedChanged"/>
+                <RadioButton x:Name="Game3Rb" Content="Game 3" CheckedChanged="Game_CheckedChanged"/>
+            </HorizontalStackLayout>
+            <Label x:Name="ScoreLbl" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" VerticalTextAlignment="Center"/>
+        </Grid>
         <Grid Grid.Row ="1" ColumnDefinitions="*,6*,*,2*,*">
             <Border
               Grid.Column="1" 
@@ -133,9 +141,18 @@
                    Aspect="AspectFit"
                    InputTransparent="True"
                    ZIndex="-1" />
-
-            <ProgressBar x:Name="ProgressBar" Grid.Row="5"/>
-
+        
+        <Grid Grid.Row="5" ColumnDefinitions="*,*,*,*,*,*,*,*,*" Margin="10">
+            <Label x:Name="ProgressBar0" Grid.Column="0" BindingContext="{Binding progress[0]}" BackgroundColor="{Binding BackColorMaui}" />
+            <Label x:Name="ProgressBar1" Grid.Column="1" BindingContext="{Binding progress[1]}" BackgroundColor="{Binding BackColorMaui}" />
+            <Label x:Name="ProgressBar2" Grid.Column="2" BindingContext="{Binding progress[2]}" BackgroundColor="{Binding BackColorMaui}" />
+            <Label x:Name="ProgressBar3" Grid.Column="3" BindingContext="{Binding progress[3]}" BackgroundColor="{Binding BackColorMaui}" />
+            <Label x:Name="ProgressBar4" Grid.Column="4" BindingContext="{Binding progress[4]}" BackgroundColor="{Binding BackColorMaui}" />
+            <Label x:Name="ProgressBar5" Grid.Column="5" BindingContext="{Binding progress[5]}" BackgroundColor="{Binding BackColorMaui}" />
+            <Label x:Name="ProgressBar6" Grid.Column="6" BindingContext="{Binding progress[6]}" BackgroundColor="{Binding BackColorMaui}" />
+            <Label x:Name="ProgressBar7" Grid.Column="7" BindingContext="{Binding progress[7]}" BackgroundColor="{Binding BackColorMaui}" />
+            <Label x:Name="ProgressBar8" Grid.Column="8" BindingContext="{Binding progress[8]}" BackgroundColor="{Binding BackColorMaui}" />
+        </Grid>
         <Grid Grid.Row ="6" ColumnDefinitions="4*,2*,2*,2*,2*,4*">
                 
             <Image Grid.Column="1" Source="s3s.png" Rotation="10" HorizontalOptions="End"/>
@@ -144,12 +161,15 @@
                    StrokeShape="RoundRectangle 75,75,75,75"
                    Background="#FA7D7D"
                    HorizontalOptions="Center">
-            <Label x:Name="Player1Score"
-                   HeightRequest="50"
-                   WidthRequest="100"
-                   TextColor="White"
-                   FontSize="26"
-                   FontAttributes="Bold" />
+                <Label x:Name="Player1Score"
+                       Text="{Binding Player1Score}"
+                       HeightRequest="50"
+                       WidthRequest="100"
+                       TextColor="White"
+                       FontSize="22"
+                       FontAttributes="Bold" 
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
             </Border>
 
             <Image Grid.Column="3" Source="l1l.png" HorizontalOptions="End"/>
@@ -159,11 +179,14 @@
                     Background="#F7C671"
                     HorizontalOptions="Center">
             <Label x:Name="Player2Score"
+                   Text="{Binding Player2Score}"
                    HeightRequest="50"
                    WidthRequest="100"
                    TextColor="White"
-                   FontSize="26"
-                   FontAttributes="Bold"/>
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
             </Border>
             
         </Grid>

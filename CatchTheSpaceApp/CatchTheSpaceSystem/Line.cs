@@ -11,12 +11,12 @@ namespace CatchTheSpaceSystem
 {
     public class Line : INotifyPropertyChanged
     {
-        Game.TurnEnum _currentturn = Game.TurnEnum.None;
+        Player _currentturn = Player.None;
         private Color _backColor = Color.Transparent;
         private bool _enabled = false;
 
         public event PropertyChangedEventHandler? PropertyChanged;
-        public Game.TurnEnum CurrentTurn
+        public Player CurrentTurn
         {
             get => _currentturn;
             set
@@ -63,7 +63,7 @@ namespace CatchTheSpaceSystem
         public void Clear() {
             BackColor = Color.Transparent;
             Enabled = true;
-            CurrentTurn = Game.TurnEnum.None;
+            CurrentTurn = Player.None;
         }
         private void InvokePropertyChanged([CallerMemberName] string propertyname = "")
         {

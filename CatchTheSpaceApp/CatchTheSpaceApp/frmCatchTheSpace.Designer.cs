@@ -197,7 +197,7 @@
             // lblPlayer1
             // 
             lblPlayer1.AutoSize = true;
-            lblPlayer1.BackColor = Color.Red;
+            lblPlayer1.BackColor = Color.LightCoral;
             lblPlayer1.Dock = DockStyle.Fill;
             lblPlayer1.Location = new Point(479, 20);
             lblPlayer1.Name = "lblPlayer1";
@@ -208,7 +208,7 @@
             // lblPlayer2
             // 
             lblPlayer2.AutoSize = true;
-            lblPlayer2.BackColor = Color.FromArgb(0, 192, 0);
+            lblPlayer2.BackColor = Color.FromArgb(255, 192, 128);
             lblPlayer2.Dock = DockStyle.Fill;
             lblPlayer2.Location = new Point(1034, 20);
             lblPlayer2.Name = "lblPlayer2";
