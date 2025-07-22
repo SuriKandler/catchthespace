@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchTheSpaceTest", "CatchT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchTheSpaceMaui", "CatchTheSpaceMaui\CatchTheSpaceMaui.csproj", "{421E7131-0CFB-CC80-1D92-BD4E558140B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchTheSpaceWeb", "CatchTheSpaceWeb\CatchTheSpaceWeb.csproj", "{CF285D3B-71DD-4810-935D-712C55FA15C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{421E7131-0CFB-CC80-1D92-BD4E558140B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{421E7131-0CFB-CC80-1D92-BD4E558140B3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{421E7131-0CFB-CC80-1D92-BD4E558140B3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CF285D3B-71DD-4810-935D-712C55FA15C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF285D3B-71DD-4810-935D-712C55FA15C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF285D3B-71DD-4810-935D-712C55FA15C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF285D3B-71DD-4810-935D-712C55FA15C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
