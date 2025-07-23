@@ -1,0 +1,286 @@
+﻿@page
+@model CatchTheSpaceWeb.Pages.gameJqueryModel
+@{
+}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-12 col-md-6 order-2 order-md-1 d-flex justify-content-center mb-4 mb-md-0">
+            <div class="dots-table">
+                <table>
+                    <tr>
+                        <td><div class="dot" style="background: #FF5733;" id="d1"></div></td>
+                        <td><div class="linehorizontal b1" id="l1"></div></td>
+                        <td><div class="dot" style="background: #FFBD33;" id="d2"></div></td>
+                        <td><div class="linehorizontal b2" id="l2"></div></td>
+                        <td><div class="dot" style="background: #DBFF33;"></div></td>
+                        <td><div class="linehorizontal b3" id="l3"></div></td>
+                        <td><div class="dot" style="background: #75FF33;"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="linevertical b1" id="l4"></div></td>
+                        <td><div class="space s1"></div></td>
+                        <td><div class="linevertical b1 b2" id="l5"></div></td>
+                        <td><div class="space s2"></div></td>
+                        <td><div class="linevertical b2 b3" id="l6"></div></td>
+                        <td><div class="space s3"></div></td>
+                        <td><div class="linevertical b3" id="l7"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="dot" style="background: #33FF57;"></div></td>
+                        <td><div class="linehorizontal b1 b4" id="l8"></div></td>
+                        <td><div class="dot" style="background: #33FFBD;"></div></td>
+                        <td><div class="linehorizontal b2 b5" id="l9"></div></td>
+                        <td><div class="dot" style="background: #33DBFF;"></div></td>
+                        <td><div class="linehorizontal b3 b6" id="l10"></div></td>
+                        <td><div class="dot" style="background: #3375FF;"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="linevertical b4" id="l11"></div></td>
+                        <td><div class="space s4"></div></td>
+                        <td><div class="linevertical b4 b5" id="l12"></div></td>
+                        <td><div class="space s5"></div></td>
+                        <td><div class="linevertical b5 b6" id="l13"></div></td>
+                        <td><div class="space s6"></div></td>
+                        <td><div class="linevertical b6" id="l14"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="dot" style="background: #5733FF;"></div></td>
+                        <td><div class="linehorizontal b4 b7" id="l15"></div></td>
+                        <td><div class="dot" style="background: #BD33FF;"></div></td>
+                        <td><div class="linehorizontal b5 b8" id="l16"></div></td>
+                        <td><div class="dot" style="background: #FF33DB;"></div></td>
+                        <td><div class="linehorizontal b6 b9" id="l17"></div></td>
+                        <td><div class="dot" style="background: #FF3375;"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="linevertical b7" id="l18"></div></td>
+                        <td><div class="space s7"></div></td>
+                        <td><div class="linevertical b7 b8" id="l19"></div></td>
+                        <td><div class="space s8"></div></td>
+                        <td><div class="linevertical b8 b9" id="l20"></div></td>
+                        <td><div class="space s9"></div></td>
+                        <td><div class="linevertical b9" id="l21"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="dot" style="background: #FF3333;"></div></td>
+                        <td><div class="linehorizontal b7" id="l22"></div></td>
+                        <td><div class="dot" style="background: #FF9933;"></div></td>
+                        <td><div class="linehorizontal b8" id="l23"></div></td>
+                        <td><div class="dot" style="background: #99FF33;"></div></td>
+                        <td><div class="linehorizontal b9" id="l24"></div></td>
+                        <td><div class="dot" style="background: #33FF99;"></div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 order-1 order-md-2 d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="dots-table">
+                <div id="msg" class="turn-label mb-3 m">Lets Play, click the Start button</div>
+                <div class="btn btn-warning btn-lg mb-3" id="btnStart">Start</div>
+
+                <div class="d-flex justify-content-center flex-wrap gap-1 mt-5 mb-3">
+                    <div class="progress-label p1" style="border-radius: 10px 0 0 10px;"></div>
+                    <div class="progress-label p2"></div>
+                    <div class="progress-label p3"></div>
+                    <div class="progress-label p4"></div>
+                    <div class="progress-label p5"></div>
+                    <div class="progress-label p6"></div>
+                    <div class="progress-label p7"></div>
+                    <div class="progress-label p8"></div>
+                    <div class="progress-label p9" style="border-radius: 0 10px 10px 0;"></div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <!-- Girl Circle -->
+                    <div class="player-circle girl">
+                        <img src="/images/girl.png" alt="Girl" class="player-img">
+                        <div class="score-badge" id="girlScore">0</div>
+                    </div>
+
+                    <!-- Boy Circle -->
+                    <div class="player-circle boy">
+                        <img src="/images/boy.jpg" alt="Boy" class="player-img">
+                        <div class="score-badge" id="boyScore">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            let btnStart = $("#btnStart");
+            let msg = $("#msg");
+            let lines = $(".linehorizontal, .linevertical");
+            let spaces = $(".space");
+            let progressLabels = $(".progress-label");
+
+            let currentTurn = "girl";
+            let gameOver = false;
+
+            const boxes = [
+                { lines: ["l1", "l4", "l5", "l8"], space: "s1" },
+                { lines: ["l2", "l5", "l6", "l9"], space: "s2" },
+                { lines: ["l3", "l6", "l7", "l10"], space: "s3" },
+                { lines: ["l8", "l11", "l12", "l15"], space: "s4" },
+                { lines: ["l9", "l12", "l13", "l16"], space: "s5" },
+                { lines: ["l10", "l13", "l14", "l17"], space: "s6" },
+                { lines: ["l15", "l18", "l19", "l22"], space: "s7" },
+                { lines: ["l16", "l19", "l20", "l23"], space: "s8" },
+                { lines: ["l17", "l20", "l21", "l24"], space: "s9" }
+            ];
+
+            btnStart.click(startGame);
+            lines.click(handleLineClick);
+
+            function showCurrentTurn() {
+                msg.attr("class", "turn-label mb-3 " + currentTurn)
+                   .text(currentTurn === "girl" ? "Girl's Turn" : "Boy's Turn");
+            }
+
+            function switchTurn() {
+                currentTurn = currentTurn === "girl" ? "boy" : "girl";
+                showCurrentTurn();
+            }
+
+            function updateProgressBar() {
+                progressLabels.removeClass("girl boy");
+
+                const girlScore = $(".space.girl").length;
+                const boyScore = $(".space.boy").length;
+
+                for (let i = 0; i < girlScore; i++) {
+                    $(progressLabels[i]).addClass("girl");
+                }
+
+                for (let i = 0; i < boyScore; i++) {
+                    $(progressLabels[progressLabels.length - 1 - i]).addClass("boy");
+                }
+            }
+
+            function updateScore() {
+                const girlScore = $(".space.girl").length;
+                const boyScore = $(".space.boy").length;
+
+                $("#girlScore").text(girlScore);
+                $("#boyScore").text(boyScore);
+
+                updateProgressBar();
+            }
+
+            function checkForWinner() {
+                const girlScore = $(".space.girl").length;
+                const boyScore = $(".space.boy").length;
+
+                if (girlScore + boyScore === 9) {
+                    gameOver = true;
+                    if (girlScore > boyScore) {
+                        msg.text("Girl Wins!").attr("class", "turn-label mb-3 girl");
+                        launchConfetti('mediumpurple');
+                        $(".player-circle.girl").addClass("winner");
+                    } else {
+                        msg.text("Boy Wins!").attr("class", "turn-label mb-3 boy");
+                        launchConfetti('mediumaquamarine');
+                        $(".player-circle.boy").addClass("winner");
+                    }
+                }
+            }
+
+            function checkForCompletedBoxes() {
+                let boxCompleted = false;
+
+                boxes.forEach(box => {
+                    const linesCompleted = box.lines.every(id => {
+                        const line = $("#" + id);
+                        return line.hasClass("girl-line") || line.hasClass("boy-line") || line.hasClass("completed-line");
+                    });
+
+                    const space = $("." + box.space);
+
+                    if (linesCompleted && !space.hasClass("girl") && !space.hasClass("boy")) {
+                        space.addClass(currentTurn);
+                        box.lines.forEach(id => {
+                            $("#" + id).addClass("completed-line");
+                        });
+                        boxCompleted = true;
+                    }
+                });
+
+                updateScore();
+
+                if (!boxCompleted) {
+                    switchTurn();
+                }
+
+                checkForWinner();
+            }
+
+            function handleLineClick(e) {
+                if (gameOver) return;
+
+                const line = $(e.target);
+                if (line.hasClass("girl-line") || line.hasClass("boy-line") || line.hasClass("completed-line")) {
+                    return;
+                }
+
+                if (currentTurn === "girl") {
+                    line.addClass("girl-line");
+                } else {
+                    line.addClass("boy-line");
+                }
+
+                checkForCompletedBoxes();
+            }
+
+            function startGame() {
+                lines.removeClass("girl-line boy-line completed-line");
+                spaces.removeClass("girl boy");
+                $(".player-circle").removeClass("winner");
+
+                updateScore();
+
+                currentTurn = "girl";
+                showCurrentTurn();
+                gameOver = false;
+            }
+
+            // Confetti launcher
+            function launchConfetti(color) {
+                if (typeof confetti === 'undefined') {
+                    alert("Confetti! Imagine colorful " + color + " confetti here 🎉");
+                    return;
+                }
+
+                const duration = 2000;
+                const end = Date.now() + duration;
+
+                (function frame() {
+                    confetti({
+                        particleCount: 5,
+                        angle: 60,
+                        spread: 55,
+                        origin: { x: 0 },
+                        colors: [color]
+                    });
+                    confetti({
+                        particleCount: 5,
+                        angle: 120,
+                        spread: 55,
+                        origin: { x: 1 },
+                        colors: [color]
+                    });
+
+                    if (Date.now() < end) {
+                        requestAnimationFrame(frame);
+                    }
+                })();
+            }
+
+        });
+    </script>
+}
