@@ -134,6 +134,9 @@
             { lines: ["l17", "l20", "l21", "l24"], space: "s9" }
         ];
 
+        btnStart.addEventListener("click", startGame);
+              
+
         function showCurrentTurn() {
             msg.className = "turn-label mb-3 " + currentTurn;
             msg.textContent = currentTurn === "girl" ? "Girl's Turn" : "Boy's Turn";
@@ -257,10 +260,10 @@
             currentTurn = "girl";
             showCurrentTurn();
             gameOver = false;
+            lines.forEach(line => line.addEventListener("click", handleLineClick));
         }
 
-        btnStart.addEventListener("click", startGame);
-        lines.forEach(line => line.addEventListener("click", handleLineClick));
+       
 
         // Confetti launcher
         function launchConfetti(color) {

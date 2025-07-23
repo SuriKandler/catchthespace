@@ -136,8 +136,7 @@
             ];
 
             btnStart.click(startGame);
-            lines.click(handleLineClick);
-
+            
             function showCurrentTurn() {
                 msg.attr("class", "turn-label mb-3 " + currentTurn)
                    .text(currentTurn === "girl" ? "Girl's Turn" : "Boy's Turn");
@@ -247,6 +246,7 @@
                 currentTurn = "girl";
                 showCurrentTurn();
                 gameOver = false;
+                    lines.click(handleLineClick);
             }
 
             // Confetti launcher
