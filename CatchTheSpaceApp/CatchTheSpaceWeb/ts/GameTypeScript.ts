@@ -8,19 +8,11 @@
 
 $(document).ready(function () {
 
-    type JQ<T extends HTMLElement = HTMLElement> = JQuery<T>;
-
-    let btnStart: JQ<HTMLButtonElement> = $("#btnStart");
-    let msg: JQ = $("#msg");
-    let lines: JQ = $(".linehorizontal, .linevertical");
-    let spaces: JQ = $(".space");
-    let progressLabels: JQ = $(".progress-label");
-
-/*    let btnStart = $("#btnStart");
+    let btnStart = $("#btnStart");
     let msg = $("#msg");
     let lines = $(".linehorizontal, .linevertical");
     let spaces = $(".space");
-    let progressLabels = $(".progress-label");*/
+    let progressLabels = $(".progress-label");
 
     let currentTurn: "girl" | "boy" = "girl";
     let gameOver = false;
