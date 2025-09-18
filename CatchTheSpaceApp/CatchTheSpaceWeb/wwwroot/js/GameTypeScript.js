@@ -18,8 +18,8 @@ $(document).ready(function () {
         { lines: ["l16", "l19", "l20", "l23"], space: "s8" },
         { lines: ["l17", "l20", "l21", "l24"], space: "s9" }
     ];
-    btnStart.click(startGame);
-    //btnStart.on("click", startGame);
+    //btnStart.click(startGame);
+    btnStart.on("click", startGame);
     function showCurrentTurn() {
         msg.attr("class", "turn-label mb-3 " + currentTurn)
             .text(currentTurn === "girl" ? "Girl's Turn" : "Boy's Turn");
